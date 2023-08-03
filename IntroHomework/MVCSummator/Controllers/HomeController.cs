@@ -24,7 +24,7 @@ namespace MVCSummator.Controllers
         [HttpPost]
         public ActionResult Addition(AdditionViewModel model)
         {
-            model.Sum = model.FirstNumber + model.SecondNumber;
+            model.Sum = model.FirstNumber + model.SecondNumber + 1;
             return this.View(model);
         }
 
